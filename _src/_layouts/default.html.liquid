@@ -1,0 +1,33 @@
+---
+layout: wrapper.html
+---
+<header>
+    {% include header.html.liquid %}
+</header>
+
+<main>
+    <article>
+        <header>
+            <h1> {{ page.title }}</h1>
+            {% if page.description %}
+                <p> {{ page.description }}</p>
+            {% endif %}
+            {% if page.date %}
+                <p> Date: <time datetime="{{ page.date }}"> {{ page.date }}</time></p>
+            {% endif %}
+            {% if page.tags.size > 0 %}
+                <p>
+                    Tags:
+                    {% for tag in page.tags %}
+                        <a href="/notes#{{ tag }}">#{{ tag }}</a>
+                    {% endfor %}
+                </p>
+            {% endif %}
+        </header>
+        {{ content }}
+    </article>
+</main>
+
+<footer>
+    {% include footer.html.liquid %}
+</footer>

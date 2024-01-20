@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title> {{ site.title }} | {{ page.title }} </title>
+        <meta name="description" content="
+        {% if page.description %}
+            {{ page.description }}
+        {% else %}
+            {{ site.description }}
+        {% endif %}" />
+
+        {% include head.html.liquid %}
+    </head>
+    <body>
+        {{ content }}
+    </body>
+</html>

@@ -1,0 +1,14 @@
+<div class="title"><a href="/">Bruno Franca</a></div>
+<nav>
+    <ul>
+    {% for item in site.data.menu_navigation %}
+    <li>
+        <a href="{{ item.link }}">
+            {% if item.text%}
+                {{ item.text }}
+            {% endif %}
+        </a>
+    </li>
+    {% endfor %}
+    </ul>
+</nav>
