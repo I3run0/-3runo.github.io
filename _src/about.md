@@ -1,6 +1,6 @@
 ---
 title: About
-permalink: /about-me
+permalink: /about-me/
 ---
 
 *todo*

@@ -20,13 +20,14 @@
 
 title: Bruno Franca  
 email: Brunofrancasecdev@gmail.com 
+
 description: >-
   Blogging about software project and how I realize than
 
 #URL settings
-domain: "I3run0.github.io"
+domain: "i3run0.github.io"
 permalink: pretty
-url: "https://I3run0.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://i3run0.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 
 
 source: _src
@@ -34,6 +35,8 @@ source: _src
 
 plugins:
   - jekyll-feed
+
+
 
 defaults:
    -
